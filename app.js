@@ -127,7 +127,7 @@ app.put('/api/v1/todos/:id', (req, res) => {
   });
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(process.env.PORT, () => {
   console.log(`server running on port ${PORT}`)
